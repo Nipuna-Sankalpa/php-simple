@@ -12,7 +12,7 @@ dropDB();
 
 function createDB(){
     global $connection;
-    if($connection->setConnection('db55','root','1234')){
+    if($connection->setConnection('10.5.0.5','root','1234')){
         if($connection->createDatabase('php_simple')){
             print("true\n");
         }else{
